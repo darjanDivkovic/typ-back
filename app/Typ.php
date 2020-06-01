@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Typ extends Model
 {
-    //
+    protected $table = "typ";
 }
