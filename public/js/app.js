@@ -6417,7 +6417,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Varela+Round&display=swap);", ""]);
 
 // module
-exports.push([module.i, ".app-container {\n  margin: 0;\n  padding: 0;\n  font-family: 'Varela Round', sans-serif;\n  background-color: #F8F8F8;\n  overflow: hidden;\n}\n\n.header-container {\n  margin-top: 100px;\n  margin-left: 40px;\n  border-radius: 50px;\n  width: 90%;\n  height: 70px;\n  display: flex;\n  align-items: center;\n  background-color: white;\n  box-shadow: 0px 32px 49px -4px rgba(0,0,0,0.1);\n}\n\n.logo-container {\n  display : flex;\n  align-items: center;\n}\n\n.logo {\n  height: 120px;\n  transition: 2s;\n  border-radius: 50%;\n}\n\n.logo:hover {\n  transform: rotate(360deg);\n}\n\n.logo-text {\n  margin-left: 30px;\n  font-size: 40px;\n}\n\n.cart-button-container {\n  position: relative;\n  margin-left: auto;\n  margin-right: 60px;\n}\n\n.menu-container {\n\n  width: 80%;\n  margin-top: 60px;\n  transition: 0.5s;\n}\n\n.menu-item {\n\n  padding: 20px 30px;\n  border-radius: 10px;\n  margin-bottom: 40px;\n  background-size: cover ;\n  box-shadow: 10px 10px 49px -4px rgba(0,0,0,0.45);\n  transition: 0.5s;\n}\n\n.menu-item:hover {\n  transform: scale(1.2);\n}\n\n.menu-item h3 {\n  text-align: right;\n}\n\n.menu-item-add-btn {\n  margin-top: 50px;\n}\n\n.menu-item button {\n  width: 50px;\n  height: 50px;\n  margin-top: 100px;\n  margin-left: 140px;\n  border-radius: 10px;\n  border: none;\n  background-color: white;\n  font-size: 24px;\n  font-weight: bold;\n  box-shadow: 5px 5px 49px -4px rgba(0,0,0,0.75);\n  cursor: pointer;\n  outline: none;\n}\n\n.menu-container-ul {\n  display: grid;\n  grid-template-columns: repeat(4,1fr);\n}\n\n.menu-container-ul li {\n  list-style: none;\n  margin-right: 70px;\n  width: 180px;\n  height: 250px;\n}\n\nli {\n  list-style: none;\n}\n\n.cart-items {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 200px;\n}\n\n.cart-item {\n  margin-left: -40px;\n}\n\n.cart-item-des {\n  background-color: #F8F8F8;\n  border-radius: 10px;\n  padding: 5px;\n}\n\n\n.remove-btn {\n  border-radius: 8px;\n  width: 80px;\n  height: 30px;\n  border: 2px solid #d9534f;\n  font-weight: bold;\n  background-color: #ffffff;\n  color: #d9534f;\n  margin-right: 0px;\n  transition: 0.5s;\n  cursor: pointer;\n}\n\n.remove-btn:hover {\n  background-color: #d9534f;\n  color: #ffffff;\n}\n\n.main-container {\n  display: flex;\n}\n\n.preview-order-btn {\n  position: absolute;\n  width: 200px;\n  height: 40px;\n  border-radius: 8px;\n  border: 3px solid\t#0275d8;\n  background-color: #ffffff;\n  color: #0275d8;\n  font-size: 14px;\n  font-weight: bold;\n  bottom: 20px;\n  left: 50px;\n  transition: 0.5s;\n  cursor: pointer;\n}\n\n.preview-order-btn:hover {\n  background-color: #0275d8;\n  color: #ffffff;\n}\n\n.cart-container {\n  position: relative;\n  width: 300px;\n  max-height: 600px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-left: 400px;\n  transition: 1s;\n  margin-top: 50px;\n  background-color: white;\n  border-radius: 10px;\n  box-shadow: -4px -1px 46px -14px rgba(0,0,0,0.45);\n}\n\n.cart-items-container {\n  overflow: scroll;\n  overflow-y: auto;\n  overflow-x: hidden;\n  max-height: 450px;\n}\n\n::-webkit-scrollbar {\n  width: 7px;\n}\n\n/* Track */\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n  box-shadow: inset 0 0 5px grey;\n  border-radius: 7px;\n}\n\n/* Handle */\n::-webkit-scrollbar-thumb {\n  background: #ffffff;\n  border-radius: 10px;\n  border: 1px solid grey;\n}\n\n/* Handle on hover */\n::-webkit-scrollbar-thumb:hover {\n  background: #555;\n}\n\n.empty-msg {\n  margin-left: 20px;\n  color: #555;\n}\n\n.cart-button {\n  background-image: url(" + escape(__webpack_require__(/*! ./res/cart.jpg */ "./resources/js/res/cart.jpg")) + ");\n  background-size: cover;\n  margin-top: 5px;\n  border: none;\n  height: 50px;\n  width: 50px;\n  border-radius: 10px;\n  outline: none;\n  cursor: pointer;\n}\n\n.order-container {\n  width: 80%;\n  height: 600px;\n  margin: 40px auto;\n  border-radius: 10px;\n  display: flex;\n}\n\n.order-preview {\n  width: 60%;\n  background-color: #ffffff;\n  border-radius: 10px;\n  box-shadow: -4px 21px 46px -14px rgba(0,0,0,0.55);\n}\n\n.order-preview h2 {\n  margin-left: 40px;\n}\n\n\n\n.preview-items-container {\n  max-height: 350px;\n  overflow: scroll;\n  overflow-y: auto;\n  overflow-x: hidden;\n  margin-left: 30px;\n  margin-right: 30px;\n}\n\n.item-preview {\n  display: flex; \n  flex-direction: row;\n  align-items: center;\n}\n\n.item-preview img {\n  height: 50px;\n  margin-top: -20px;\n}\n\n.item-preview h4 {\n  color: #555;\n  margin-left: 40px;\n}\n\n.item-preview .finaly {\n  margin-left: auto;\n  margin-right: 20px;\n}\n\n.calculating-price-div {\n  text-align: right;\n  margin-right: 55px;\n}\n\n.back-to-menu-btn {\n  margin-left: -110px;\n  margin-right: 70px;\n  \n}\n\n.back-to-menu-btn button {\n  width: 100px;\n  height: 40px;\n  border-radius: 8px;\n  border: none;\n  background-color: #0275d8;\n  color: #ffffff;\n  font-size: 14px;\n  font-weight: bold;\n  cursor: pointer;\n  transition: 0.5s;\n}\n\n.back-to-menu-btn button:hover {\n  transform: scale(1.2);\n}\n\n.hr-style {\n  width: 80%;\n  margin-right: 0;\n}\n\n.hr-style-cart {\n  width: 100%;\n  margin-right: 10px;\n}\n\n.new-in-cart-notification {\n  position: absolute;\n  top: -20px;\n  right: -10px;\n  width: 20px;\n  border-radius: 50%;\n  text-align: center;\n  color: #ffffff;\n  font-weight: bold;\n  height: 20px;\n  background-color: #d9534f;\n  -webkit-animation: pop-up 0.1s linear;\n          animation: pop-up 0.1s linear;\n}\n\n@-webkit-keyframes pop-up {\n  0% {\n   transform: scale(0);\n  }\n  100% {\n    transform: scale(1);\n  }\n}\n\n@keyframes pop-up {\n  0% {\n   transform: scale(0);\n  }\n  100% {\n    transform: scale(1);\n  }\n}\n\n.price-calc-empty {\n  margin-left : 40px;\n  color: #555;\n}\n\n.quantity-picker-container {\n  display: flex;\n  flex-direction: row;\n  width: 100px;\n  height: 30px;\n  line-height: 0;\n  margin-right: 50px;\n}\n\n.quantity-picker-container div {\n  line-height: 2;\n  text-align: center;\n  color: white;\n  background-color: lightgray;\n  border-radius: 5px;\n  height: 30px;\n  width: 30px;\n}\n\n.cart-item-options-container {\n  display: flex;\n  flex-direction: row;\n}\n\n.qp-buttons {\n  margin: 0 5px;\n  width: 22px;\n  border: 1px solid #555;\n  border-radius: 5px;\n  color: black;\n  background-color: white;\n  transition: 0.5s;\n  cursor: pointer;\n  outline: none;\n}\n\n.qp-buttons:hover {\n  background-color: #555;\n  color: #ffffff;\n}\n\n.contact-container {\n  margin-left: 40px;\n  border-radius: 10px;\n  background-color: #ffffff;\n  width: 300px;\n  box-shadow: -4px 21px 46px -14px rgba(0,0,0,0.55);\n}\n\n.contact-container {\n  display: flex;\n  flex-direction: column;\n}\n\n.contact-container h2 {\n  text-align: center;\n  margin-bottom: 80px;\n}\n\n.contact-container label {\n  margin-left: 30px;\n  font-size: 18px;\n  margin: 5px 30px;\n}\n\n.contact-container input {\n  width: 240px;\n  height: 30px;\n  margin-left: auto;\n  margin-right: auto;\n\n  border-radius: 10px;\n  border: none;\n  box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.25);\n  outline: none;\n  color: #555;\n  transition: 0.3s;\n}\n\n.contact-container p {\n  text-align: center;\n  margin: 50px 20px 0;\n  color: #555;\n}\n\n.contact-container input:focus {\n  width: 260px;\n}\n\n.contact-container button {\n  margin: 40px auto 0;\n  width: 200px;\n  height: 35px;\n  background-color: #0275d8;\n  border-radius: 8px;\n  border: none;\n  font-weight: bold;\n  color: #ffffff;\n  transition: 0.3s;\n  cursor: pointer;\n}\n\n.contact-container button:hover {\n  transform: scale(1.2);\n}", ""]);
+exports.push([module.i, ".app-container {\n  margin: 0;\n  padding: 0;\n  font-family: 'Varela Round', sans-serif;\n  background-color: #F8F8F8;\n  overflow: hidden;\n}\n\n.header-container {\n  margin-top: 100px;\n  margin-left: 40px;\n  border-radius: 50px;\n  width: 90%;\n  height: 70px;\n  display: flex;\n  align-items: center;\n  background-color: white;\n  box-shadow: 0px 32px 49px -4px rgba(0,0,0,0.1);\n}\n\n.logo-container {\n  display : flex;\n  align-items: center;\n}\n\n.logo {\n  height: 120px;\n  transition: 2s;\n  border-radius: 50%;\n}\n\n.logo:hover {\n  transform: rotate(360deg);\n}\n\n.logo-text {\n  margin-left: 30px;\n  font-size: 40px;\n}\n\n.cart-button-container {\n  position: relative;\n  margin-left: auto;\n  margin-right: 60px;\n}\n\n.menu-container {\n  min-width: 80%;\n  min-height: 800px;\n  margin-top: 60px;\n  transition: 0.5s;\n}\n\n.menu-item {\n\n  padding: 20px 30px;\n  border-radius: 10px;\n  margin-bottom: 40px;\n  background-size: cover ;\n  box-shadow: 10px 10px 49px -4px rgba(0,0,0,0.45);\n  transition: 0.5s;\n}\n\n.menu-item:hover {\n  transform: scale(1.2);\n}\n\n.menu-item h3 {\n  text-align: right;\n}\n\n.menu-item-add-btn {\n  margin-top: 50px;\n}\n\n.menu-item button {\n  width: 50px;\n  height: 50px;\n  margin-top: 100px;\n  margin-left: 140px;\n  border-radius: 10px;\n  border: none;\n  background-color: white;\n  font-size: 24px;\n  font-weight: bold;\n  box-shadow: 5px 5px 49px -4px rgba(0,0,0,0.75);\n  cursor: pointer;\n  outline: none;\n}\n\n.menu-container-ul {\n  display: grid;\n  grid-template-columns: repeat(4,1fr);\n}\n\n.menu-container-ul li {\n  list-style: none;\n  margin-right: 70px;\n  width: 180px;\n  height: 250px;\n}\n\nli {\n  list-style: none;\n}\n\n.cart-items {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 200px;\n}\n\n.cart-item {\n  margin-left: -40px;\n}\n\n.cart-item-des {\n  background-color: #F8F8F8;\n  border-radius: 10px;\n  padding: 5px;\n}\n\n\n.remove-btn {\n  border-radius: 8px;\n  width: 80px;\n  height: 30px;\n  border: 2px solid #d9534f;\n  font-weight: bold;\n  background-color: #ffffff;\n  color: #d9534f;\n  margin-right: 0px;\n  transition: 0.5s;\n  cursor: pointer;\n}\n\n.remove-btn:hover {\n  background-color: #d9534f;\n  color: #ffffff;\n}\n\n.main-container {\n  display: flex;\n}\n\n.preview-order-btn {\n  position: absolute;\n  width: 200px;\n  height: 40px;\n  border-radius: 8px;\n  border: 3px solid\t#0275d8;\n  background-color: #ffffff;\n  color: #0275d8;\n  font-size: 14px;\n  font-weight: bold;\n  bottom: 20px;\n  left: 50px;\n  transition: 0.5s;\n  cursor: pointer;\n}\n\n.preview-order-btn:hover {\n  background-color: #0275d8;\n  color: #ffffff;\n}\n\n.cart-container {\n  position: relative;\n  width: 300px;\n  max-height: 600px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-left: 400px;\n  transition: 1s;\n  margin-top: 50px;\n  background-color: white;\n  border-radius: 10px;\n  box-shadow: -4px -1px 46px -14px rgba(0,0,0,0.45);\n}\n\n.cart-items-container {\n  overflow: scroll;\n  overflow-y: auto;\n  overflow-x: hidden;\n  max-height: 450px;\n}\n\n::-webkit-scrollbar {\n  width: 7px;\n}\n\n/* Track */\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n  box-shadow: inset 0 0 5px grey;\n  border-radius: 7px;\n}\n\n/* Handle */\n::-webkit-scrollbar-thumb {\n  background: #ffffff;\n  border-radius: 10px;\n  border: 1px solid grey;\n}\n\n/* Handle on hover */\n::-webkit-scrollbar-thumb:hover {\n  background: #555;\n}\n\n.empty-msg {\n  margin-left: 20px;\n  color: #555;\n}\n\n.cart-button {\n  background-image: url(" + escape(__webpack_require__(/*! ./res/cart.jpg */ "./resources/js/res/cart.jpg")) + ");\n  background-size: cover;\n  margin-top: 5px;\n  border: none;\n  height: 50px;\n  width: 50px;\n  border-radius: 10px;\n  outline: none;\n  cursor: pointer;\n}\n\n.order-container {\n  width: 80%;\n  height: 600px;\n  margin: 40px auto;\n  border-radius: 10px;\n  display: flex;\n}\n\n.order-preview {\n  width: 60%;\n  background-color: #ffffff;\n  border-radius: 10px;\n  box-shadow: -4px 21px 46px -14px rgba(0,0,0,0.55);\n}\n\n.order-preview h2 {\n  margin-left: 40px;\n}\n\n\n\n.preview-items-container {\n  max-height: 350px;\n  overflow: scroll;\n  overflow-y: auto;\n  overflow-x: hidden;\n  margin-left: 30px;\n  margin-right: 30px;\n}\n\n.item-preview {\n  display: flex; \n  flex-direction: row;\n  align-items: center;\n}\n\n.item-preview img {\n  height: 50px;\n  margin-top: -20px;\n}\n\n.item-preview h4 {\n  color: #555;\n  margin-left: 40px;\n}\n\n.item-preview .finaly {\n  margin-left: auto;\n  margin-right: 20px;\n}\n\n.calculating-price-div {\n  text-align: right;\n  margin-right: 55px;\n}\n\n.back-to-menu-btn {\n  margin-left: -110px;\n  margin-right: 70px;\n  \n}\n\n.back-to-menu-btn button {\n  width: 100px;\n  height: 40px;\n  border-radius: 8px;\n  border: none;\n  background-color: #0275d8;\n  color: #ffffff;\n  font-size: 14px;\n  font-weight: bold;\n  cursor: pointer;\n  transition: 0.5s;\n}\n\n.back-to-menu-btn button:hover {\n  transform: scale(1.2);\n}\n\n.hr-style {\n  width: 80%;\n  margin-right: 0;\n}\n\n.hr-style-cart {\n  width: 100%;\n  margin-right: 10px;\n}\n\n.new-in-cart-notification {\n  position: absolute;\n  top: -20px;\n  right: -10px;\n  width: 20px;\n  border-radius: 50%;\n  text-align: center;\n  color: #ffffff;\n  font-weight: bold;\n  height: 20px;\n  background-color: #d9534f;\n  -webkit-animation: pop-up 0.1s linear;\n          animation: pop-up 0.1s linear;\n}\n\n@-webkit-keyframes pop-up {\n  0% {\n   transform: scale(0);\n  }\n  100% {\n    transform: scale(1);\n  }\n}\n\n@keyframes pop-up {\n  0% {\n   transform: scale(0);\n  }\n  100% {\n    transform: scale(1);\n  }\n}\n\n.price-calc-empty {\n  margin-left : 40px;\n  color: #555;\n}\n\n.quantity-picker-container {\n  display: flex;\n  flex-direction: row;\n  width: 100px;\n  height: 30px;\n  line-height: 0;\n  margin-right: 50px;\n}\n\n.quantity-picker-container div {\n  line-height: 2;\n  text-align: center;\n  color: white;\n  background-color: lightgray;\n  border-radius: 5px;\n  height: 30px;\n  width: 30px;\n}\n\n.cart-item-options-container {\n  display: flex;\n  flex-direction: row;\n}\n\n.qp-buttons {\n  margin: 0 5px;\n  width: 22px;\n  border: 1px solid #555;\n  border-radius: 5px;\n  color: black;\n  background-color: white;\n  transition: 0.5s;\n  cursor: pointer;\n  outline: none;\n}\n\n.qp-buttons:hover {\n  background-color: #555;\n  color: #ffffff;\n}\n\n.contact-container {\n  margin-left: 40px;\n  border-radius: 10px;\n  background-color: #ffffff;\n  width: 300px;\n  box-shadow: -4px 21px 46px -14px rgba(0,0,0,0.55);\n}\n\n.contact-container {\n  display: flex;\n  flex-direction: column;\n}\n\n.contact-container h2 {\n  text-align: center;\n  margin-bottom: 80px;\n}\n\n.contact-container label {\n  margin-left: 30px;\n  font-size: 18px;\n  margin: 5px 30px;\n}\n\n.contact-container input {\n  width: 240px;\n  height: 30px;\n  margin-left: auto;\n  margin-right: auto;\n\n  border-radius: 10px;\n  border: none;\n  box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.25);\n  outline: none;\n  color: #555;\n  transition: 0.3s;\n}\n\n.contact-container p {\n  text-align: center;\n  margin: 50px 20px 0;\n  color: #555;\n}\n\n.contact-container input:focus {\n  width: 260px;\n}\n\n.contact-container button {\n  margin: 40px auto 0;\n  width: 200px;\n  height: 35px;\n  background-color: #0275d8;\n  border-radius: 8px;\n  border: none;\n  font-weight: bold;\n  color: #ffffff;\n  transition: 0.3s;\n  cursor: pointer;\n}\n\n.contact-container button:hover {\n  transform: scale(1.2);\n}", ""]);
 
 // exports
 
@@ -70937,7 +70937,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function MenuItem(props) {
   var style = {
-    backgroundImage: "url(".concat(props.item.img_path, ")"),
+    backgroundImage: "url(".concat(props.item.img_url, ")"),
     backgroundPosition: 'right'
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
@@ -70964,6 +70964,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _MenuItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MenuItem */ "./resources/js/components/menu/MenuItem.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -70989,6 +70991,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
 var MenuItems = /*#__PURE__*/function (_Component) {
   _inherits(MenuItems, _Component);
 
@@ -71001,55 +71004,26 @@ var MenuItems = /*#__PURE__*/function (_Component) {
 
     _this = _super.call(this, props);
     _this.state = {
-      menuItems: [{
-        id: 1,
-        name: "Margherita",
-        price: 5.99,
-        img_path: "https://i.ibb.co/G3PcW0y/pizza3.png"
-      }, {
-        id: 2,
-        name: "Q Stagioni",
-        price: 8.99,
-        img_path: "https://i.ibb.co/T083QQN/tandori.png"
-      }, {
-        id: 3,
-        name: "Napoletana",
-        price: 2.99,
-        img_path: "https://i.ibb.co/DLTPx1C/pizza4.png"
-      }, {
-        id: 4,
-        name: "Boscaiola",
-        price: 3.99,
-        img_path: "https://i.ibb.co/ncbSzxt/pizza10.png"
-      }, {
-        id: 5,
-        name: "Valtellina",
-        price: 3.99,
-        img_path: "https://i.ibb.co/KyXmCXR/pizza5.png"
-      }, {
-        id: 6,
-        name: "Diavola",
-        price: 7.99,
-        img_path: "https://i.ibb.co/nrXq08V/pizza7.png"
-      }, {
-        id: 7,
-        name: "Tedesca",
-        price: 4.99,
-        img_path: "https://i.ibb.co/MBXGJQp/pizza8.png"
-      }, {
-        id: 8,
-        name: "Mimosa",
-        price: 4.99,
-        img_path: "https://i.ibb.co/MkNnZvf/pizza8.png"
-      }]
+      menuItems: []
     };
     return _this;
   }
 
   _createClass(MenuItems, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/typ').then(function (res) {
+        _this2.setState({
+          menuItems: res.data
+        });
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
-      var _this2 = this;
+      var _this3 = this;
 
       var style;
       if (this.props.cartOpen) style = {
@@ -71066,7 +71040,7 @@ var MenuItems = /*#__PURE__*/function (_Component) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MenuItem__WEBPACK_IMPORTED_MODULE_1__["default"], {
           key: pizza.id,
           item: pizza,
-          addToCart: _this2.props.addToCart
+          addToCart: _this3.props.addToCart
         });
       })));
     }
@@ -71155,11 +71129,9 @@ var OrderDetails = /*#__PURE__*/function (_Component) {
         };
       });
       var order = {
-        user: {
-          credentials: this.state.credentials,
-          adress: this.state.adress,
-          phone: this.state.phone
-        },
+        credentials: this.state.credentials,
+        adress: this.state.adress,
+        phone: this.state.phone,
         itemsToMake: itemsToMake,
         bill: this.props.bill
       }; // This is what i want to send 
@@ -71231,7 +71203,7 @@ function OrderItem(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "item-preview"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: props.item.img_path,
+    src: props.item.img_url,
     alt: "a"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, props.item.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, props.item.price, " \u20AC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "X", props.item.quantity), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
     className: "finaly"
