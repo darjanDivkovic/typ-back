@@ -20,3 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::resource('typ', 'Api\MenuController');
 Route::resource('makeOrder', 'Api\OrderController');
+Route::resource('itemsToMake', 'Api\ItemsToMakeController');

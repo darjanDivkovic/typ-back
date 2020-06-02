@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class TypOrders extends Migration
+class Kitchen extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class TypOrders extends Migration
      */
     public function up()
     {
-        Schema::create('orders', function (Blueprint $table) {
+        Schema::create('kitchen', function (Blueprint $table) {
             $table->string('credentials');
-            $table->string('adress');
-            $table->string('phone');
-            $table->float('credentials');
+            $table->string('item');
+            $table->integer('quantity');
         });
     }
 
@@ -28,6 +27,6 @@ class TypOrders extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('orders');
+        //
     }
 }

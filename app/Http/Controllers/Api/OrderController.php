@@ -11,7 +11,7 @@ class OrderController extends Controller
     public function store(Request $request){
         // Create order
         $order = Order::create($request->all());
-
+        
         return 'Succesfull!';
     }
 }
