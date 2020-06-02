@@ -71106,9 +71106,9 @@ var OrderDetails = /*#__PURE__*/function (_Component) {
 
     _this = _super.call(this, props);
     _this.state = {
-      credentials: '',
-      adress: '',
-      phone: ''
+      credentials: "",
+      adress: "",
+      phone: ""
     };
     _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_this));
     _this.submit = _this.submit.bind(_assertThisInitialized(_this));
@@ -71138,31 +71138,52 @@ var OrderDetails = /*#__PURE__*/function (_Component) {
         bill: this.props.bill
       }; // This is what i want to send 
 
-      /*
       console.log(order);
-      axios.post('/api/makeOrder', order)
-           .then(res=> console.log(res));
-      */
-
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/api/makeOrder', order).then(function (res) {
+        return console.log(res);
+      });
       var orderItems = {
         credentials: this.state.credentials,
         itemsToMake: itemsToMake
       };
-      console.log(JSON.stringify(orderItems)); // Clear fields
-
-      this.clearFields();
+      var myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+      var raw = JSON.stringify(orderItems);
+      var requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: raw,
+        redirect: "follow"
+      };
+      fetch("/api/itemsToMake", requestOptions).then(function (response) {
+        return response.text();
+      }).then(function (result) {
+        return console.log(result);
+      })["catch"](function (error) {
+        return console.log("error", error);
+      });
+      /*
+      let orderedItemsJSON = JSON.stringify(orderItems);
+      console.log(orderedItemsJSON);
+      axios.post('/api/itemsToMake', orderedItemsJSON, {
+          header: 'Content-Type: application/json',
+      })
+           .then(res => console.log(res))
+           .catch((err) => console.log(err));
+             // Clear fields
+      */
     }
   }, {
     key: "clearFields",
     value: function clearFields() {
       this.setState({
-        credentials: ''
+        credentials: ""
       });
       this.setState({
-        adress: ''
+        adress: ""
       });
       this.setState({
-        phone: ''
+        phone: ""
       });
     }
   }, {
