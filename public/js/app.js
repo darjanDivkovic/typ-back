@@ -71108,11 +71108,14 @@ var OrderDetails = /*#__PURE__*/function (_Component) {
     _this.state = {
       credentials: "",
       adress: "",
-      phone: ""
+      phone: "",
+      placeOrderAvailable: false,
+      orderConfirmed: false
     };
     _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_this));
     _this.submit = _this.submit.bind(_assertThisInitialized(_this));
     _this.clearFields = _this.clearFields.bind(_assertThisInitialized(_this));
+    _this.makePlaceOrderAvailable = _this.makePlaceOrderAvailable.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -71120,6 +71123,7 @@ var OrderDetails = /*#__PURE__*/function (_Component) {
     key: "handleChange",
     value: function handleChange(e) {
       this.setState(_defineProperty({}, e.target.name, e.target.value));
+      this.makePlaceOrderAvailable();
     }
   }, {
     key: "submit",
@@ -71136,9 +71140,7 @@ var OrderDetails = /*#__PURE__*/function (_Component) {
         adress: this.state.adress,
         phone: this.state.phone,
         bill: this.props.bill
-      }; // This is what i want to send 
-
-      console.log(order);
+      };
       axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/api/makeOrder', order).then(function (res) {
         return console.log(res);
       });
@@ -71162,16 +71164,10 @@ var OrderDetails = /*#__PURE__*/function (_Component) {
       })["catch"](function (error) {
         return console.log("error", error);
       });
-      /*
-      let orderedItemsJSON = JSON.stringify(orderItems);
-      console.log(orderedItemsJSON);
-      axios.post('/api/itemsToMake', orderedItemsJSON, {
-          header: 'Content-Type: application/json',
-      })
-           .then(res => console.log(res))
-           .catch((err) => console.log(err));
-             // Clear fields
-      */
+      this.clearFields();
+      this.setState({
+        orderConfirmed: true
+      });
     }
   }, {
     key: "clearFields",
@@ -71187,8 +71183,27 @@ var OrderDetails = /*#__PURE__*/function (_Component) {
       });
     }
   }, {
+    key: "makePlaceOrderAvailable",
+    value: function makePlaceOrderAvailable() {
+      if (this.state.credentials && this.state.phone && this.state.adress !== '') {
+        this.setState({
+          placeOrderAvailable: true
+        });
+      } else {
+        this.setState({
+          placeOrderAvailable: false
+        });
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
+      var button = null;
+      var orderConfirmed = null;
+      if (this.state.placeOrderAvailable) button = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.submit
+      }, "Place Order");
+      if (this.state.orderConfirmed) orderConfirmed = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Your order has been confirmed");
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "contact-container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Personal details"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Name & Surname"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -71206,9 +71221,7 @@ var OrderDetails = /*#__PURE__*/function (_Component) {
         name: "phone",
         value: this.state.phone,
         onChange: this.handleChange
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Please, provide us with some personal details to complete your order"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        onClick: this.submit
-      }, "Place Order"));
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Please, provide us with some personal details to complete your order"), button, orderConfirmed);
     }
   }]);
 
